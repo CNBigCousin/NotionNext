@@ -1,82 +1,82 @@
 const CONFIG = {
   HEO_HOME_BANNER_ENABLE: true,
 
-  HEO_SITE_CREATE_TIME: '2021-09-21', // 建站日期，用于计算网站运行的第几天
+  SITE_CREATE_TIME: '2023-04-07', // 建站日期，用于计算网站运行的第几天
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
-  HEO_NOTICE_BAR: [
-    { title: '欢迎来到我的博客', url: 'https://blog.tangly1024.com' },
-    { title: '访问文档中心获取更多帮助', url: 'https://docs.tangly1024.com' }
+  NOTICE_BAR: [
+    { title: '欢迎来到我的赛博空间', url: 'https://blog.cnrowe.cn' },
+    { title: '我是赛博道人，这里分享我的学习笔记'},
+    { title: 'NAS、Docker、虚拟化、网络、安防等相关技术'},
+    { title: '更多赛博内容，欢迎订阅我的频道，谢谢！'},
   ],
-
-  // 英雄区左右侧组件颠倒位置
-  HEO_HERO_REVERSE: false,
-  // 博客主体区左右侧组件颠倒位置
-  HEO_HERO_BODY_REVERSE: false,
+    // 英雄区左右侧组件颠倒位置
+    HEO_HERO_REVERSE: false,
+    // 博客主体区左右侧组件颠倒位置
+    HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HEO_HERO_TITLE_1: '分享编程',
-  HEO_HERO_TITLE_2: '与思维认知',
-  HEO_HERO_TITLE_3: 'TANGLY1024.COM',
-  HEO_HERO_TITLE_4: '新版上线',
-  HEO_HERO_TITLE_5: 'NotionNext4.0 轻松定制主题',
-  HEO_HERO_TITLE_LINK: 'https://tangly1024.com',
+  HERO_TITLE_1: '分享技术',
+  HERO_TITLE_2: '与赛博认知',
+  HERO_TITLE_3: 'BLOG.CNROWE.CN',
+  HERO_TITLE_4: 'CN-大表哥',
+  HERO_TITLE_5: 'GitHub',
+  HERO_TITLE_LINK: 'https://github.com/CoryRowe',
 
   // 英雄区显示三个置顶分类
-  HEO_HERO_CATEGORY_1: { title: '必看精选', url: '/tag/必看精选' },
-  HEO_HERO_CATEGORY_2: { title: '热门文章', url: '/tag/热门文章' },
-  HEO_HERO_CATEGORY_3: { title: '实用教程', url: '/tag/实用教程' },
+  HERO_CATEGORY_1: { title: '必看精选', url: '/tag/必看精选' }, // 对应notion数据库中的“tag”栏，添加“必看精选”的选项即可启用
+  HERO_CATEGORY_2: { title: '热门文章', url: '/tag/热门文章' }, // 对应notion数据库中的“tag”栏，添加“热门文章”的选项即可启用
+  HERO_CATEGORY_3: { title: '实用教程', url: '/tag/实用教程' }, // 对应notion数据库中的“tag”栏，添加“实用教程”的选项即可启用
 
   // 英雄区右侧推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
-  HEO_HERO_RECOMMEND_POST_TAG: '推荐',
-  HEO_HERO_RECOMMEND_POST_SORT_BY_UPDATE_TIME: false, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
-  //   HERO_RECOMMEND_COVER: 'https://cdn.pixabay.com/photo/2015/10/30/20/13/sunrise-1014712_1280.jpg', // 英雄区右侧图片
+  HERO_RECOMMEND_POST_TAG: '',
+  HERO_RECOMMEND_POST_SORT_BY_UPDATE_TIME: false, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
+  HERO_RECOMMEND_COVER: '/images/heo/wallhaven-m3z7m9.jpg', // 英雄区右侧图片
 
   // 右侧个人资料卡牌欢迎语，点击可自动切换
   HEO_INFOCARD_GREETINGS: [
     '你好！我是',
-    '🔍 分享与热心帮助',
-    '🤝 专修交互与设计',
+    '💗 分享与热心帮助',
     '🏃 脚踏实地行动派',
-    '🏠 智能家居小能手',
-    '🤖️ 数码科技爱好者',
-    '🧱 团队小组发动机'
+    '💠 Docker 小能手',
+    '💻 IT 赛博达人',
+    '📂 NAS 存储爱好者'
   ],
-  HEO_INFO_CARD_URL: 'https://github.com/tangly1024/NotionNext', // 个人资料底部按钮链接
+  HEO_INFO_CARD_URL: 'https://github.com/CoryRowe/NotionNext', // 个人资料底部按钮链接
 
-  // 用户技能图标
-  HEO_GROUP_ICONS: [
+  // 英雄区用户技能图标
+  GROUP_ICONS: [
     {
-      title_1: 'AfterEffect',
-      img_1: '/images/heo/20239df3f66615b532ce571eac6d14ff21cf072602.webp',
-      color_1: '#989bf8',
-      title_2: 'Sketch',
-      img_2: '/images/heo/2023e0ded7b724a39f12d59c3dc8fbdc7cbe074202.webp',
-      color_2: '#ffffff'
+      title_1: 'network',
+      img_1: '/images/heo/network.png',
+      color_1: '#cfe2f3',
+      title_2: 'linux',
+      img_2: '/images/heo/linux.png',
+      color_2: '#d9d9d9'
     },
     {
       title_1: 'Docker',
-      img_1: '/images/heo/20231108a540b2862d26f8850172e4ea58ed075102.webp',
+      img_1: '/images/heo/docker.webp',
       color_1: '#57b6e6',
-      title_2: 'Photoshop',
-      img_2: '/images/heo/2023e4058a91608ea41751c4f102b131f267075902.webp',
-      color_2: '#4082c3'
+      title_2: 'k8s',
+      img_2: '/images/heo/k8s.png',
+      color_2: '#1f1f1f'
     },
     {
-      title_1: 'FinalCutPro',
-      img_1: '/images/heo/20233e777652412247dd57fd9b48cf997c01070702.webp',
-      color_1: '#ffffff',
-      title_2: 'Python',
-      img_2: '/images/heo/20235c0731cd4c0c95fc136a8db961fdf963071502.webp',
+      title_1: 'server',
+      img_1: '/images/heo/server.png',
+      color_1: '#cccccc',
+      title_2: 'Drive',
+      img_2: '/images/heo/OneDrive.png',
       color_2: '#ffffff'
     },
     {
-      title_1: 'Swift',
-      img_1: '/images/heo/202328bbee0b314297917b327df4a704db5c072402.webp',
+      title_1: 'MySQL',
+      img_1: '/images/heo/MySQL.png',
       color_1: '#eb6840',
-      title_2: 'Principle',
-      img_2: '/images/heo/2023f76570d2770c8e84801f7e107cd911b5073202.webp',
-      color_2: '#8f55ba'
+      title_2: 'VMware',
+      img_2: '/images/heo/VMware.png',
+      color_2: '#d9ead3'
     },
     {
       title_1: 'illustrator',
@@ -90,21 +90,21 @@ const CONFIG = {
       title_1: 'JS',
       img_1: '/images/heo/2023786e7fc488f453d5fb2be760c96185c0075502.webp',
       color_1: '#f7cb4f',
-      title_2: 'HTML',
-      img_2: '/images/heo/202372b4d760fd8a497d442140c295655426070302.webp',
-      color_2: '#e9572b'
+      title_2: 'HNAS',
+      img_2: '/images/heo/NAS.png',
+      color_2: '#989bf8'
     },
     {
       title_1: 'Git',
       img_1: '/images/heo/2023ffa5707c4e25b6beb3e6a3d286ede4c6071102.webp',
       color_1: '#df5b40',
-      title_2: 'Rhino',
-      img_2: '/images/heo/20231ca53fa0b09a3ff1df89acd7515e9516173302.webp',
-      color_2: '#1f1f1f'
+      title_2: 'Firewall',
+      img_2: '/images/heo/Firewalld2.png',
+      color_2: '#ffffff'
     }
   ],
 
-  HEO_SOCIAL_CARD: true, // 是否显示右侧，点击加入社群按钮
+  HEO_SOCIAL_CARD: false, // 是否显示右侧，点击加入社群按钮
   HEO_SOCIAL_CARD_TITLE_1: '交流频道',
   HEO_SOCIAL_CARD_TITLE_2: '加入我们的社群讨论分享',
   HEO_SOCIAL_CARD_TITLE_3: '点击加入社群',
@@ -131,7 +131,7 @@ const CONFIG = {
   HEO_ARTICLE_RECOMMEND: true, // 文章关联推荐
 
   HEO_WIDGET_LATEST_POSTS: true, // 显示最新文章卡
-  HEO_WIDGET_ANALYTICS: false, // 显示统计卡
+  HEO_WIDGET_ANALYTICS: true, // 显示统计卡
   HEO_WIDGET_TO_TOP: true,
   HEO_WIDGET_TO_COMMENT: true, // 跳到评论区
   HEO_WIDGET_DARK_MODE: true, // 夜间模式
