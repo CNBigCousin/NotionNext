@@ -1,10 +1,10 @@
 const CONFIG = {
   HEO_HOME_BANNER_ENABLE: true,
 
-  SITE_CREATE_TIME: '2023-04-07', // 建站日期，用于计算网站运行的第几天
+  HEO_SITE_CREATE_TIME: '2023-04-07', // 建站日期，用于计算网站运行的第几天
 
   // 首页顶部通知条滚动内容，如不需要可以留空 []
-  NOTICE_BAR: [
+  HEO_NOTICE_BAR: [
     { title: '欢迎来到我的赛博空间', url: 'https://blog.cnrowe.cn' },
     { title: '我是赛博道人，这里分享我的学习笔记'},
     { title: 'NAS、Docker、虚拟化、网络、安防等相关技术'},
@@ -16,22 +16,22 @@ const CONFIG = {
     HEO_HERO_BODY_REVERSE: false,
 
   // 英雄区(首页顶部大卡)
-  HERO_TITLE_1: '分享技术',
-  HERO_TITLE_2: '与赛博认知',
-  HERO_TITLE_3: 'BLOG.CNROWE.CN',
-  HERO_TITLE_4: 'CN-大表哥',
-  HERO_TITLE_5: 'GitHub',
-  HERO_TITLE_LINK: 'https://github.com/CoryRowe',
+  HEO_HERO_TITLE_1: '分享技术',
+  HEO_HERO_TITLE_2: '与赛博认知',
+  HEO_HERO_TITLE_3: 'BLOG.CNROWE.CN',
+  HEO_HERO_TITLE_4: 'CN-大表哥',
+  HEO_HERO_TITLE_5: 'GitHub',
+  HEO_HERO_TITLE_LINK: 'https://github.com/CoryRowe',
 
   // 英雄区显示三个置顶分类
-  HERO_CATEGORY_1: { title: '必看精选', url: '/tag/必看精选' }, // 对应notion数据库中的“tag”栏，添加“必看精选”的选项即可启用
-  HERO_CATEGORY_2: { title: '热门文章', url: '/tag/热门文章' }, // 对应notion数据库中的“tag”栏，添加“热门文章”的选项即可启用
-  HERO_CATEGORY_3: { title: '实用教程', url: '/tag/实用教程' }, // 对应notion数据库中的“tag”栏，添加“实用教程”的选项即可启用
+  HEO_HERO_CATEGORY_1: { title: '必看精选', url: '/tag/必看精选' }, // 对应notion数据库中的“tag”栏，添加“必看精选”的选项即可启用
+  HEO_HERO_CATEGORY_2: { title: '热门文章', url: '/tag/热门文章' }, // 对应notion数据库中的“tag”栏，添加“热门文章”的选项即可启用
+  HEO_HERO_CATEGORY_3: { title: '实用教程', url: '/tag/实用教程' }, // 对应notion数据库中的“tag”栏，添加“实用教程”的选项即可启用
 
   // 英雄区右侧推荐文章标签, 例如 [推荐] , 最多六篇文章; 若留空白''，则推荐最近更新文章
-  HERO_RECOMMEND_POST_TAG: '',
-  HERO_RECOMMEND_POST_SORT_BY_UPDATE_TIME: false, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
-  HERO_RECOMMEND_COVER: '/images/heo/wallhaven-m3z7m9.jpg', // 英雄区右侧图片
+  HEO_HERO_RECOMMEND_POST_TAG: '',
+  HEO_HERO_RECOMMEND_POST_SORT_BY_UPDATE_TIME: false, // 推荐文章排序，为`true`时将强制按最后修改时间倒序
+  HEO_HERO_RECOMMEND_COVER: '/images/heo/wallhaven-m3z7m9.jpg', // 英雄区右侧图片
 
   // 右侧个人资料卡牌欢迎语，点击可自动切换
   HEO_INFOCARD_GREETINGS: [
@@ -45,7 +45,7 @@ const CONFIG = {
   HEO_INFO_CARD_URL: 'https://github.com/CoryRowe/NotionNext', // 个人资料底部按钮链接
 
   // 英雄区用户技能图标
-  GROUP_ICONS: [
+  HEO_GROUP_ICONS: [
     {
       title_1: 'network',
       img_1: '/images/heo/network.png',
